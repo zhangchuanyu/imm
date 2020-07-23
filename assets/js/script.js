@@ -7,6 +7,7 @@ $(document).ready(function(){
     stagePadding:0,
     nav : true
   });
+
   $(".owl-carousel").owlCarousel({
   	items:1,
   	loop: true,
@@ -14,7 +15,5 @@ $(document).ready(function(){
     stagePadding:0,
     nav : true
   });
-
-
 
 });
