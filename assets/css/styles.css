@@ -5,27 +5,27 @@ body{
 
 
 .primary-color{
-	color: #006341 !important;	//green
+	color: #006341 !important;	/*green*/
 }
 
 .secondary-color{
-	color: #212721 !important;	//black
+	color: #212721 !important;	/*black*/
 }
 
 .tertiary-color{
-	color: #F8F9F8 !important;	//gray
+	color: #F8F9F8 !important;	/*gray*/
 }
 
 .primary-bg{
-	background-color: #006341 !important;	//green
+	background-color: #006341 !important;	/*green*/
 }
 
 .secondary-bg{
-	background-color: #212721 !important;	//dark gray (almost black)
+	background-color: #212721 !important;	/*dark gray (almost black)*/
 }
 
 .tertiary-bg{
-	background-color: #F8F9F8 !important;	//gray
+	background-color: #F8F9F8 !important;	/*gray*/
 }
 
 header > nav.navbar{
@@ -59,6 +59,34 @@ header > nav.navbar #navbarCollapse a.btn{
 
 header > nav.navbar #navbarCollapse a.btn.primary-bg{
 	border-color: #006341;
+}
+
+/*program highlights section*/
+
+main section.program-highlights .media .highlight-para{
+	padding-right: 45% !important;
+	line-height: 2.5;
+}
+
+main section.program-highlights .media .highlight-btn{
+	border: 0;
+	padding-left: 0;
+}
+
+main section.program-highlights .media .highlight-btn:hover{
+	background-color: transparent;
+    color: #006341;
+}
+
+/*testimonial section*/
+main section.testimonial-section{
+    width: auto;
+}
+
+/*faculty section*/
+
+main section.faculty-section{
+    background-color: #F4F4F4;
 }
 
 /*video section*/
@@ -96,17 +124,29 @@ footer.container-fluid div.footer-nav > a >i{
 }
 
 /*slider*/
-.owl-carousel{
+.owl-carousel.main-carousel{
 	margin-top: 90px;
 }
 
-.owl-stage-outer, .owl-item{
+.owl-carousel.main-carousel .owl-stage-outer, .owl-item{
     height: 75vh;
 }
 
-.owl-carousel .item{
+
+.owl-carousel.courses-carousel .owl-stage-outer, .owl-item{
+    max-height: 400px;
+}
+
+.owl-carousel.main-carousel .item{
 	height: inherit;
   	position: relative;
+}
+
+
+.owl-carousel.courses-carousel .item{
+	height: inherit;
+  	position: relative;
+	max-height: 400px;
 }
 
 .owl-carousel .item .content{
@@ -119,6 +159,11 @@ footer.container-fluid div.footer-nav > a >i{
     justify-content: center;
     align-items: center;
 }
+
+.owl-carousel.courses-carousel  .item .content{
+	max-height: 400px;
+}
+
 
 .owl-carousel .item .content > h1{
 	text-align: center;
@@ -146,6 +191,12 @@ footer.container-fluid div.footer-nav > a >i{
 	opacity: 0.75;
 	display: flex;
 	justify-content: center;
+}
+
+.owl-carousel.courses-carousel .overlay{
+	background-color: #000000;
+	opacity: 0.5;
+	max-height: 400px;
 }
 
 .owl-carousel .overlay > h1{
