@@ -221,3 +221,16 @@ footer.container-fluid div.footer-nav > a >i{
     font-size: 3em;
     color: #fff;
 }
+/*testimonialpage*/
+.card-up{
+	height: 200px; 
+	background-color: #006341;
+}
+.thumbnail{
+	position: relative;
+	top:-120px;
+}
+.card-body{
+	top: -52px;
+	position: relative;
+}
